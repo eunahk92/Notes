@@ -9,7 +9,7 @@ module.exports = function(app) {
             notesArr.push(note);
     
             fs.writeFile(path.join(__dirname, "../../db/db.json"), JSON.stringify(notesArr), function(err, data) {
-                return notesArr;
+                return res.json(notesArr);
             });
         });
     });
