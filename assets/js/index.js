@@ -55,7 +55,7 @@ const handleNoteSave = function () {
     title: $noteTitle.val(),
     text: $noteText.val(),
     id: function() {
-      return Math.floor(Math.random() * 10000);
+      return Math.floor(Math.random() * 100000);
     }
   };
 
