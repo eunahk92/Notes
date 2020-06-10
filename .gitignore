@@ -7,5 +7,3 @@ node_modules
 # Ignore DS_Store file
 .DS_Store
 
-# Ignore db.json changes
-db
