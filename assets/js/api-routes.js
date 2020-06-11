@@ -5,7 +5,7 @@ const notesDB = require("../../db/db.json");
 module.exports = app => {
     app.post("/api/notes", (req, res) => {
         let note = req.body;
-        note.id = createRandomID();
+        note.id = generateID();
         notesDB.push(note);
         fs.writeFile(path.join(__dirname, "../../db/db.json"), JSON.stringify(notesDB), (err, data) => {
             if (err) throw err;
@@ -27,7 +27,7 @@ module.exports = app => {
         res.sendFile(path.join(__dirname, "../html/notes.html"));
     });
 
-    createRandomID = () => {
+    generateID = () => {
         let id = '';
         const numbers = "0123456789"
         for (let i = 0; i < 10; i++) {
