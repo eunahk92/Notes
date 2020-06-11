@@ -1,8 +1,8 @@
 # Notes
 An Express backend application that can be used to write, save, and delete notes.
 
-### Link to deployed application on Heroku
-
+## Link to deployed application on Heroku
+[Notes Application - click here](https://thawing-ravine-79183.herokuapp.com/)
 
 ## User Story
 ```
@@ -12,6 +12,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 ## Table of Contents
 * [Installation](#installation)
+* [Usage](#usage)
 * [Application Criteria](#application-criteria)
 * [Questions](#questions)
 
@@ -19,6 +20,11 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 npm i
 ```
+
+## Usage
+Get started with Notes by creating a new note and saving it. The saved note(s) will appear on the left column and can be accessed by clicking on the note's title. The respective note can also be deleted from the list if desired.
+
+![](assets/gif/Notes.gif)
 
 ## Application Criteria
 
