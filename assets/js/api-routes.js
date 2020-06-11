@@ -16,7 +16,7 @@ module.exports = app => {
     app.delete('/api/notes/:id', (req, res) => {
         const id = req.params.id;
         for (let i = 0; i < notesDB.length; i++) {
-            if (notesDB[i].id == id) {
+            if (notesDB[i].id === id) {
                 notesDB.splice(i, 1);
                 fs.writeFile(path.join(__dirname, "../../db/db.json"), JSON.stringify(notesDB), (err, data) => {
                     if (err) throw err;
@@ -33,7 +33,6 @@ module.exports = app => {
         for (let i = 0; i < 10; i++) {
             let index = Math.floor(Math.random() * numbers.length);
             id += numbers.charAt(index) + "";
-            console.log(id);
         }
         return id;
     };
