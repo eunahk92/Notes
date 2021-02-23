@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const notesDB = require("../../db/db.json");
+const notesDB = require("../db/db.json");
 
 module.exports = app => {
     app.post("/api/notes", (req, res) => {
